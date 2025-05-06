@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" alt="My Weather App">
+      <img class="logo" alt="SheCodes Logo" src="img/logo.png" />
+      <header>
+        <form id="city-search-form">
+          <input
+            type="text"
+            class="enter-city"
+            placeholder="Enter a city..."
+            autocomplete="off"
+            autofocus="on"
+            id="search-city-input"
+            required
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1 id="city-output"></h1>
+          <p>
+            <span id="time"></span> <span id="description"></span>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="current-weather">
+          <div id="icon"></div>
+          <span id="temperature"></span>
+          <span class="unit">ºC</span>
+        </div>
+
+        <div class="weatherForecast">
+          <ul>
+            <li>
+              Mon<br />🌈
+              <br />
+              <span><strong>19º</strong> 10º</span>
+            </li>
+            <li>
+              Tue<br />🌤️
+              <br />
+              <span><strong>20º</strong> 11º</span>
+            </li>
+            <li>
+              Wed<br />🌤️
+              <br />
+              <span><strong>21º</strong> 11º</span>
+            </li>
+            <li>
+              Thu<br />🌤️
+              <br />
+              <span><strong>20º</strong> 11º</span>
+            </li>
+            <li>
+              Fri<br />🌤️
+              <br />
+              <span><strong>19º</strong> 13º</span>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a
+          href="https://github.com/AnaChatillon"
+          target="_blank"
+          class="author"
+        >
+          Ana Chatillon
+        </a>
+        and is open-sourced on
+        <a
+          href="https://github.com/AnaChatillon/W7-WeatherApp"
+          target="_blank"
+          class="author"
+        >
+          GitHub
+        </a>
+        and hosted on
+        <a
+          href="https://w7weatherapp.netlify.app/"
+          target="_blank"
+          class="author"
+        >
+          Netlify.</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
