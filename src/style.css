@@ -39,9 +39,11 @@ p strong {
   font-weight: 600;
   line-height: 2;
 }
-
+div .header {
+  display: flex;
+}
 .enter-city {
-  background-color: #f9f7fe;
+  background-color: #fef5cf;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -61,6 +63,9 @@ p strong {
 }
 .weathrly {
   color: #630369;
+  position: relative;
+  margin-left: 10px;
+  top: 28px;
 }
 
 #city-output {
@@ -92,6 +97,7 @@ p strong {
   color: #257ea6;
 }
 .unit {
+  color: #257ea6;
   font-size: 30px;
   position: relative;
   top: 25px;
@@ -116,12 +122,12 @@ li strong {
   color: #e4497d;
 }
 footer {
-  color: rgb(158, 157, 157);
+  color: #024651;
   font-size: 14px;
   text-align: center;
   position: relative;
   top: -50px;
 }
 a {
-  color: #885df1;
+  color: #0fa19c;
 }
