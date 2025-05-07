@@ -25,7 +25,6 @@ h1 {
   font-weight: 800;
   font-style: normal;
   font-size: 40px;
-  color: #272142;
 }
 
 p {
@@ -52,13 +51,20 @@ p strong {
 }
 
 .search-button {
-  background-color: #885df1;
+  background-color: #0fa19c;
   border: none;
   border-radius: 6px;
   color: #ffffff;
   font-size: 16px;
   margin-left: 5px;
   padding: 15px 50px;
+}
+.weathrly {
+  color: #630369;
+}
+
+#city-output {
+  color: #f83e01;
 }
 
 .current-weather {
@@ -81,6 +87,9 @@ p strong {
   position: relative;
   top: 10px;
   right: 15px;
+}
+#temperature {
+  color: #257ea6;
 }
 .unit {
   font-size: 30px;
