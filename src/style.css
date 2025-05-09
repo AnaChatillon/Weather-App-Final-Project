@@ -103,33 +103,47 @@ div .header {
   position: relative;
   top: 25px;
 }
-.weatherForecast {
-  position: relative;
-  top: -90px;
-}
-ul {
-  color: #b0558a;
-  font-family: "Merienda", cursive;
-  font-weight: 600;
-  font-size: 18px;
-  list-style-type: none;
+.weather-forecast {
   display: flex;
-  justify-content: space-between;
+  font-family: "Merienda", cursive;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather-forecast-date {
   text-align: center;
-  line-height: 2;
+  color: #b0558a;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
-li span {
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
   color: #3d8fb5;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
 }
-li strong {
+
+.weather-forecast-temperatures strong {
   color: #257ea6;
 }
+.weather-forecast-temperature {
+  padding: 0 6px;
+}
+
 footer {
   color: #024651;
   font-size: 14px;
   text-align: center;
-  position: relative;
-  top: -50px;
 }
 a {
   color: #0fa19c;
