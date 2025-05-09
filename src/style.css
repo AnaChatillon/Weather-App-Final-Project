@@ -7,12 +7,12 @@ div.container {
   border-radius: 20px;
   box-shadow: 0 40px 70px rgba(65, 50, 100, 0.09);
   margin: 60px auto;
-  max-width: 700px;
+  max-width: 500px;
   padding: 30px;
 }
 .logo {
   margin-top: 10px;
-  width: 145px;
+  width: 100px;
 }
 
 main {
@@ -49,7 +49,7 @@ div .header {
   font-size: 16px;
   margin-top: 30px;
   padding: 15px;
-  width: 70%;
+  width: 63%;
 }
 
 .search-button {
@@ -58,14 +58,15 @@ div .header {
   border-radius: 6px;
   color: #ffffff;
   font-size: 16px;
-  margin-left: 5px;
-  padding: 15px 50px;
+  margin-left: 15px;
+  padding: 15px 40px;
 }
 .weathrly {
   color: #630369;
-  position: relative;
+  font-size: 28px;
   margin-left: 10px;
-  top: 28px;
+  position: relative;
+  top: 22px;
 }
 
 #city-output {
@@ -107,7 +108,9 @@ div .header {
   top: -90px;
 }
 ul {
-  color: rgb(158, 157, 157);
+  color: #b0558a;
+  font-family: "Merienda", cursive;
+  font-weight: 600;
   font-size: 18px;
   list-style-type: none;
   display: flex;
@@ -116,10 +119,10 @@ ul {
   line-height: 2;
 }
 li span {
-  color: #ee6794;
+  color: #3d8fb5;
 }
 li strong {
-  color: #e4497d;
+  color: #257ea6;
 }
 footer {
   color: #024651;
