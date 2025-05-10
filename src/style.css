@@ -27,15 +27,17 @@ h1 {
   font-size: 40px;
 }
 
-p {
-  color: rgb(158, 157, 157);
+.today p {
+  color: #257ea6;
+  font-family: "Merienda", cursive;
   font-size: 16px;
+  font-weight: 600;
   position: relative;
   top: -18px;
 }
 
-p strong {
-  color: #e4497d;
+.today p strong {
+  color: #b0558a;
   font-weight: 600;
   line-height: 2;
 }
@@ -43,13 +45,19 @@ div .header {
   display: flex;
 }
 .enter-city {
-  background-color: #fef5cf;
+  background-color: #fdf7da;
   border: none;
   border-radius: 6px;
+  color: #257ea6;
+  font-family: "Merienda", cursive;
   font-size: 16px;
+  font-weight: 700;
   margin-top: 30px;
-  padding: 15px;
+  padding: 10px;
   width: 63%;
+}
+input::placeholder {
+  color: #257ea6;
 }
 
 .search-button {
@@ -57,9 +65,10 @@ div .header {
   border: none;
   border-radius: 6px;
   color: #ffffff;
-  font-size: 16px;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
   margin-left: 15px;
-  padding: 15px 40px;
+  padding: 9px 30px;
 }
 .weathrly {
   color: #630369;
@@ -144,11 +153,12 @@ div .header {
   padding: 0 6px;
 }
 
-footer {
+.footer {
   color: #024651;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
-a {
+
+.footer a {
   color: #0fa19c;
 }
