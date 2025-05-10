@@ -48,7 +48,32 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-icon">🌈</div>
+            <div class="weather-forecast-temperatures">
+               <div class="weather-forecast-temperature">
+                <strong>19º</strong>
+               </div>
+               <div class="weather-forecast-temperature">10º</div>
+            </div>
+     </div>
+`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let form = document.querySelector("#city-search-form");
 form.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Adelaide");
+displayForecast();
