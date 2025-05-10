@@ -98,4 +98,4 @@ function displayForecast(response) {
 let form = document.querySelector("#city-search-form");
 form.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Adelaide");
+searchCity("Iceland");
