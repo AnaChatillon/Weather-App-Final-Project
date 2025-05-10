@@ -73,6 +73,10 @@ div .header {
   color: #f83e01;
 }
 
+.today {
+  display: flex;
+  justify-content: space-around;
+}
 .current-weather {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
@@ -83,8 +87,7 @@ div .header {
   display: flex;
   justify-content: end;
   position: relative;
-  top: -150px;
-  right: 20px;
+  top: 25px;
 }
 #icon {
   width: 92px;
