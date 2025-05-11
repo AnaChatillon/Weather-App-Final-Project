@@ -41,7 +41,7 @@ div.container {
   background-color: #f2e0e3;
   border: none;
   border-radius: 6px;
-  color: #257ea6;
+  color: #056562;
   font-family: "Merienda", cursive;
   font-size: 16px;
   font-weight: 700;
@@ -51,7 +51,7 @@ div.container {
   width: 55%;
 }
 input::placeholder {
-  color: #1a7ba8;
+  color: #056562;
   font-weight: 700;
 }
 
@@ -90,7 +90,7 @@ h2 {
   margin: 10px 30px;
 }
 #city-output {
-  color: #a20f51;
+  color: #b51122;
 }
 
 .current-weather {
@@ -107,13 +107,13 @@ h2 {
   display: flex;
 }
 #temperature {
-  color: #0a5e84;
+  color: #056562;
   position: relative;
   font-size: 90px;
   top: -10px;
 }
 #unit {
-  color: #0a5e84;
+  color: #056562;
   font-size: 30px;
   align-items: flex-end;
   position: relative;
@@ -122,25 +122,23 @@ h2 {
 #icon {
   transform: scale(1.5);
   position: relative;
-  top: -100px;
-  left: 5px;
+  top: -110px;
+  left: 8px;
 }
 #description {
-  color: #630369;
+  color: #b41719;
   font-size: 18px;
   font-weight: 800;
 }
 
 .description p {
-  color: #0a5e84;
+  color: #056562;
   font-family: "Merienda", cursive;
   font-size: 18px;
-  font-weight: 600;
 }
 
 .description p strong {
-  color: #a20f51;
-  font-weight: 600;
+  color: #630369;
 }
 
 .weather-forecast {
@@ -152,7 +150,7 @@ h2 {
 
 .weather-forecast-date {
   text-align: center;
-  color: #b32163;
+  color: #b51122;
   font-size: 20px;
   font-weight: 800;
 }
