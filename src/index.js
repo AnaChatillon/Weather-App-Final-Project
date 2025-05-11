@@ -101,4 +101,4 @@ function displayForecast(response) {
 let form = document.querySelector("#city-search-form");
 form.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Sintra");
+searchCity("Cape Town");

@@ -3,13 +3,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 div.container {
-  background-color: white;
+  background-image: url("https://i.pinimg.com/736x/79/1f/7f/791f7fe88c6a029b35b3c790fb1bd8b1.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
   border-radius: 20px;
   box-shadow: 0 40px 70px rgba(65, 50, 100, 0.09);
   margin: 60px auto;
   max-width: 600px;
-  padding: 30px;
+  padding: 30px 40px;
 }
+
 .weathrly-app {
   display: flex;
 }
@@ -35,7 +40,7 @@ main {
   justify-content: baseline;
 }
 .enter-city {
-  background-color: #fdf7da;
+  background-color: #f2e0e3;
   border: none;
   border-radius: 6px;
   color: #257ea6;
@@ -68,26 +73,27 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 44px;
+  font-size: 48px;
 }
 h2 {
   font-family: "Merienda", cursive;
   color: #630369;
+  font-size: 28px;
 }
 #city-output {
-  color: #f83e01;
+  color: #a20f51;
 }
 
 .description p {
   color: #257ea6;
   font-family: "Merienda", cursive;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   align-items: center;
 }
 
 .description p strong {
-  color: #b0558a;
+  color: #a20f51;
   font-weight: 600;
   line-height: 2;
 }
@@ -108,7 +114,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 30px;
+  margin: 20px 30px 10px 30px;
 }
 .temperature {
   display: flex;
@@ -141,47 +147,49 @@ h2 {
   display: flex;
   font-family: "Merienda", cursive;
   justify-content: space-around;
-  margin-top: 70px;
+  margin-top: 110px;
 }
 
 .weather-forecast-date {
   text-align: center;
-  color: #b0558a;
-  font-size: 20px;
-  font-weight: 600;
+  color: #b32163;
+  font-size: 26px;
+  font-weight: 800;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .weather-forecast-icon {
-  width: 85px;
+  width: 100px;
   display: block;
   margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
-  color: #3d8fb5;
+  color: #f2d4d8;
+  -webkit-text-stroke: 0.1px white;
   display: flex;
-  font-size: 18px;
+  font-size: 20px;
   justify-content: center;
   margin-top: 10px;
   text-align: center;
 }
 
 .weather-forecast-temperatures strong {
-  color: #257ea6;
+  color: #f0c8ce;
 }
 .weather-forecast-temperature {
   padding: 0 6px;
 }
 
 .footer {
-  color: #024651;
+  color: #f2d4d8;
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .footer a {
-  color: #0fa19c;
+  color: #f4e5e7;
 }
