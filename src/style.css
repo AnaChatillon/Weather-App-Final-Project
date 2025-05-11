@@ -4,22 +4,24 @@ body {
 }
 div.container {
   background-image: url("https://i.pinimg.com/736x/79/1f/7f/791f7fe88c6a029b35b3c790fb1bd8b1.jpg");
-  background-size: auto;
-  background-position: bottom;
+  background-size: cover;
+  background-position: relative;
   background-repeat: no-repeat;
+  background-position-y: -225px;
 
   border-radius: 20px;
   box-shadow: 0 40px 70px rgba(65, 50, 100, 0.09);
-  margin: 60px auto;
-  max-width: 600px;
-  padding: 30px 40px;
+  margin: 10px auto;
+  max-width: 700px;
+  padding-top: 3px;
 }
 
 .weathrly-app {
   display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .logo {
-  margin-top: 10px;
   width: 100px;
 }
 
@@ -28,11 +30,7 @@ div.container {
   font-size: 28px;
   margin-left: 10px;
   position: relative;
-  top: 22px;
-}
-
-main {
-  padding: 30px 0;
+  top: 11px;
 }
 
 .city-search-form {
@@ -47,13 +45,14 @@ main {
   font-family: "Merienda", cursive;
   font-size: 16px;
   font-weight: 700;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: 85px;
+  margin-top: 20px;
   padding: 10px;
-  width: 58%;
+  width: 55%;
 }
 input::placeholder {
-  color: #257ea6;
+  color: #1a7ba8;
+  font-weight: 700;
 }
 
 .search-button {
@@ -67,11 +66,14 @@ input::placeholder {
   margin-right: 30px;
   padding: 9px 25px;
 }
+main {
+  padding: 5px 20px;
+}
 
 h1 {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
   font-size: 48px;
 }
@@ -79,95 +81,90 @@ h2 {
   font-family: "Merienda", cursive;
   color: #630369;
   font-size: 28px;
+  font-weight: 800;
 }
-#city-output {
-  color: #a20f51;
-}
-
-.description p {
-  color: #257ea6;
-  font-family: "Merienda", cursive;
-  font-size: 18px;
-  font-weight: 600;
-  align-items: center;
-}
-
-.description p strong {
-  color: #a20f51;
-  font-weight: 600;
-  line-height: 2;
-}
-
 .today {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 30px;
 }
+#city-output {
+  color: #a20f51;
+}
+
 .current-weather {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 80px;
-  color: #272142;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 30px 10px 30px;
+  margin: 70px 60px 5px 60px;
 }
 .temperature {
   display: flex;
-  align-items: flex-end;
 }
 #temperature {
-  color: #257ea6;
+  color: #0a5e84;
+  position: relative;
+  font-size: 90px;
+  top: -10px;
 }
 #unit {
-  color: #257ea6;
+  color: #0a5e84;
   font-size: 30px;
+  align-items: flex-end;
   position: relative;
-  top: -50px;
+  top: 20px;
 }
 #icon {
   transform: scale(1.5);
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100px;
+  position: relative;
+  top: -100px;
+  left: 5px;
 }
 #description {
-  color: #f83e01;
+  color: #630369;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.5;
+}
+
+.description p {
+  color: #0a5e84;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description p strong {
+  color: #a20f51;
+  font-weight: 600;
 }
 
 .weather-forecast {
   display: flex;
   font-family: "Merienda", cursive;
   justify-content: space-around;
-  margin-top: 110px;
+  margin-top: 30px;
 }
 
 .weather-forecast-date {
   text-align: center;
   color: #b32163;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 800;
-  line-height: 20px;
-  margin-bottom: 30px;
 }
 
 .weather-forecast-icon {
-  width: 100px;
+  width: 80px;
   display: block;
   margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
-  color: #f2d4d8;
-  -webkit-text-stroke: 0.1px white;
+  color: #257296;
   display: flex;
   font-size: 20px;
   justify-content: center;
@@ -176,20 +173,20 @@ h2 {
 }
 
 .weather-forecast-temperatures strong {
-  color: #f0c8ce;
+  color: #0a5e84;
 }
 .weather-forecast-temperature {
   padding: 0 6px;
 }
 
 .footer {
-  color: #f2d4d8;
+  color: #630369;
   font-size: 14px;
-  margin-top: 30px;
-  margin-bottom: 5px;
+  margin-top: 50px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 .footer a {
-  color: #f4e5e7;
+  color: #a20f51;
 }
