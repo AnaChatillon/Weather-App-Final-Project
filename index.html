@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container" alt="Weathrly App">
-      <div class="header">
+      <div class="weathrly-app">
         <img class="logo" alt="Weathrly App" src="img/logo.png" />
         <h1 class="weathrly">Weathrly</h1>
       </div>
@@ -35,19 +35,23 @@
       </header>
       <main>
         <div class="today">
-          <div>
-            <h1 id="city-output"></h1>
-            <p>
-              <span id="time"></span> <span id="description"></span>
-              <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
-            </p>
-          </div>
-          <div class="current-weather">
-            <div id="icon"></div>
+          <h1 id="city-output"></h1>
+          <h2 id="time"></h2>
+        </div>
+        <div class="current-weather">
+          <div class="temperature">
             <span id="temperature"></span>
-            <span class="unit">ºC</span>
+            <span id="unit">ºC</span>
+          </div>
+          <div id="icon"></div>
+          <div class="description">
+            <p>
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>
+              <br />
+              Wind: <strong id="wind-speed"></strong>
+            </p>
           </div>
         </div>
 

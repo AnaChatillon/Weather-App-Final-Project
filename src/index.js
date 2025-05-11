@@ -3,6 +3,7 @@ function displayTemp(response) {
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city-output");
   let descriptionElement = document.querySelector("#description");
+  let description = response.data.condition.description;
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
@@ -12,7 +13,9 @@ function displayTemp(response) {
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
-  descriptionElement.innerHTML = response.data.condition.description;
+  descriptionElement.innerHTML = `${
+    description.charAt(0).toUpperCase() + description.slice(1)
+  }`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
@@ -34,7 +37,7 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes},`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
@@ -98,4 +101,4 @@ function displayForecast(response) {
 let form = document.querySelector("#city-search-form");
 form.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Iceland");
+searchCity("Sintra");
